@@ -1,6 +1,8 @@
 package com.heloword.practice.test;
 
 import java.util.Arrays;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 import com.heloword.practice.sorting.BubbleSort;
 import com.heloword.practice.sorting.Sort;
@@ -9,9 +11,17 @@ public class Test {
 
 	public static void main(String[] args) {
 
-		int[] array = { 3, 4, 5, 1, 2 };
+		Integer[] session = { 23};
+		Set<Integer> collect = Arrays.stream(session).collect(Collectors.toSet());
 
-		printSortResult(new BubbleSort(), array);
+		Integer[] deletes = { 2, 3, 76, 5 };
+
+		System.out.println(
+				Arrays.stream(deletes).allMatch(collect::contains)
+		);
+
+
+
 
 	}
 
