@@ -1,5 +1,7 @@
 package com.heloword.practice.fundamental;
 
+import org.junit.Test;
+
 public class StringTest {
     public static void main(String[] args) {
 
@@ -18,6 +20,15 @@ public class StringTest {
         System.out.println(s2 == s2.intern());
 
 
+    }
+
+    @Test
+    public void test() {
+        System.out.println("fuck");
+    }
+    @Test
+    public void test2() {
+        System.out.println("fuck2");
     }
 
 }
